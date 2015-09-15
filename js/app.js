@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('myApp', ['ngAnimate'])
   .controller('myCtrl', function($scope){
     "use strict";
 
@@ -8,7 +8,7 @@ angular.module('myApp', [])
     $scope.tipTotal = 0;
     $scope.mealCount = 0;
     $scope.averageTip = 0;
-    $scope.numberOfMeals = 1;
+    $scope.numberOfMeals = 0;
 
 
     /* Submit the values for Main Content*/
@@ -24,8 +24,8 @@ angular.module('myApp', [])
 
       /* My Earnings Info */
 
-      $scope.tipTotal = $scope.tip * $scope.numberOfMeals;
-      $scope.averageTip = $scope.tip / $scope.numberOfMeals;
+      $scope.tipTotal = $scope.tipTotal + $scope.tip;
+      $scope.averageTip = $scope.tipTotal / $scope.numberOfMeals;
 
     };
 
@@ -49,7 +49,7 @@ angular.module('myApp', [])
       $scope.tipTotal = 0;
       $scope.mealCount = 0;
       $scope.averageTip = 0;
-      $scope.numberOfMeals = 1;
+      $scope.numberOfMeals = 0;
 
     };
 
