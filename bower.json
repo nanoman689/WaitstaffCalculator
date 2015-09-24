@@ -1,0 +1,21 @@
+{
+  "name": "WaitstaffCalculator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nanoman689/WaitstaffCalculator",
+  "authors": [
+    "Jason Thomas <nanoman689@gmail.com>"
+  ],
+  "description": "Resturant Tip Calculator",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-route": "~1.4.6"
+  }
+}

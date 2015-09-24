@@ -1,0 +1,40 @@
+
+
+  <div class="grid">
+
+    <div class="col-2-3">
+
+       <h2> Main Content</h2>
+
+       <h3>Base Meal Details $:<input type="number" placeholder="$" ng-model="baseMeal" name="mealDetails" required=""></h3><br>
+       <h3>Tax Rate %:<input type="number" placeholder="%" ng-model="taxRate" name="baseMealPrice" required=""></h3><br>
+       <h3>Tip Percent %: <input type="number" placeholder="%" ng-model="tip" name="taxRate" required=""></h3><br>
+
+       <input type="submit" ng-click="submit()" class="submit" value="Submit!"><br>
+
+       <input type="submit" ng-click="cancel()" class="cancel" value="Cancel!"><br>
+
+    </div>
+
+    <div class="col-1-3">
+
+        <h2>Customer Charges</h2>
+
+        <h3>Subtotal {{subTotal | currency:"$"}}</h3><br>
+        <h3>Tip {{tip | currency:"$"}}</h3><br>
+        <h3>Total {{total | currency:"$"}}<h3><br>
+
+          <br>
+
+        <h2>My Earnings Info</h2>
+        <h3>Tip Total {{tipTotal  | currency:"$"}} </h3><br>
+        <h3>Meal Count {{numberOfMeals}} </h3><br>
+        <h3>Average Tip Per Meal {{averageTip  | currency:"$"}} <h3><br>
+
+    </div>
+
+  </div>
+
+  <input type="submit" ng-click="reset()" class="reset" value="reset"><br>
+</form>
+</div>
