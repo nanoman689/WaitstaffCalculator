@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Waitstaff Calculator - An AngularJS project</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+</head>
+<body ng-class="{loading: isLoading}">
+
+    <h1> Waitstaff Calculator </h1>
+    <div class="links">
+      <a href="#/"><h4>Home</h4></a>
+      <a href="#/NewMeal"><h4>New Meal</h4></a>
+      <a href="#/MyEarnings"><h4>My Earnings</h4></a>
+    </div>
+
+    <div ng-view class="animate-view"></div>
+  <!-- -->
+
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+
+
+</body>
+</html>
